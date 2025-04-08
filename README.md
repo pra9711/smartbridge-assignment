@@ -124,4 +124,4 @@ This repository contains a series of weekly tasks completed as part of the Smart
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/akarsh-debug/Smart-Bridge-Weekly-Assignments.git
+   git clone https://github.com/pra9711/smartbridge-assignment.git
