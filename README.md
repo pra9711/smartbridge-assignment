@@ -1,103 +1,127 @@
-# 🚀 MERN Stack Project with MongoDB
+# Smart Bridge Weekly Assignments
 
-![MERN Stack](https://img.shields.io/badge/MERN-Stack-blueviolet?style=for-the-badge&logo=mongodb&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+This repository contains a series of weekly tasks completed as part of the Smart Bridge program. Each week introduces different technologies and concepts, building from basic web development to full-stack applications using React.js and Express.js.
 
-Welcome to the **MERN Stack Project Repository**! This project is designed to help you learn and implement the MERN stack (MongoDB, Express.js, React, Node.js) step-by-step. Each week focuses on specific tasks to build a fully functional web application.
+## Table of Contents
 
----
-
-## 📅 Week-Wise Tasks
-
-### Week 1: **Project Setup**
-- **Objective**: Set up the development environment.
-- **Tasks**:
-  - Install Node.js and npm.
-  - Initialize a new Node.js project.
-  - Set up Git and GitHub repository.
-  - Create basic folder structure.
-- **Resources**:
-  - [Node.js Installation Guide](https://nodejs.org/)
-  - [GitHub Documentation](https://docs.github.com/)
+- [Week 1: HTML & CSS Basics](#week-1-html--css-basics)
+- [Week 2: JavaScript Fundamentals](#week-2-javascript-fundamentals)
+- [Week 3: React.js with Tailwind CSS](#week-3-reactjs-with-tailwind-css)
+- [Week 4: Full-Stack Development with React.js & Express.js](#week-4-full-stack-development-with-reactjs--expressjs)
+- [Getting Started](#getting-started)
 
 ---
 
-### Week 2: **Backend with Express.js**
-- **Objective**: Build the backend API using Express.js.
-- **Tasks**:
-  - Create an Express server.
-  - Define basic routes (`GET`, `POST`, `PUT`, `DELETE`).
-  - Test APIs using tools like Postman.
-- **Resources**:
-  - [Express.js Documentation](https://expressjs.com/)
-  - [Postman Tutorial](https://www.postman.com/)
+## Week 1: HTML & CSS Basics
+
+**Objective:** Develop foundational skills in HTML and CSS by creating structured and styled web pages.
+
+### Tasks:
+
+1. Create a webpage with:
+   - A title
+   - A main heading
+   - Two paragraphs
+
+2. Add a centered image with a caption below it.
+
+3. Style all paragraphs with:
+   - A different font family
+   - Adjusted line height
+   - Text alignment
+
+4. Design a styled button with:
+   - Padding
+   - Border
+   - Hover effect
+
+5. Create:
+   - A simple table with three columns and three rows
+   - A basic form with two input fields and a submit button
 
 ---
 
-### Week 3: **Database Integration with MongoDB**
-- **Objective**: Connect MongoDB to the backend.
-- **Tasks**:
-  - Set up a MongoDB Atlas account.
-  - Connect MongoDB to the Express server.
-  - Create models and schemas for data.
-  - Perform CRUD operations.
-- **Resources**:
-  - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-  - [Mongoose Documentation](https://mongoosejs.com/)
+## Week 2: JavaScript Fundamentals
+
+**Objective:** Strengthen understanding of core JavaScript concepts including variables, control structures, loops, and functions.
+
+### Tasks:
+
+1. Declare a variable `age` and assign it a value of `25`. Then declare `isAdult` as `true` if `age` is 18 or more, otherwise `false`.
+
+2. Given `x = 10` and `y = 5`, perform:
+   - Addition
+   - Multiplication
+   - Modulus
+
+3. Write a program to check whether a number `n` is even or odd and store the result.
+
+4. Use a `for` loop to store numbers from 1 to 5 in an array.
+
+5. Write a function `square` that takes a number as input and returns its square.
 
 ---
 
-### Week 4: **Frontend with React**
-- **Objective**: Build the frontend using React.
-- **Tasks**:
-  - Set up a React app using `create-react-app`.
-  - Design basic UI components (Header, Footer, etc.).
-  - Fetch data from the backend API.
-  - Display data dynamically on the frontend.
-- **Resources**:
-  - [React Documentation](https://reactjs.org/)
-  - [Axios for API Calls](https://axios-http.com/)
+## Week 3: React.js with Tailwind CSS
+
+**Objective:** Develop interactive user interfaces using React.js functional components with Tailwind CSS for styling.
+
+### Tasks:
+
+1. Create a `TextUpdater` component:
+   - An input field that displays text as the user types using the `useState` hook.
+
+2. Build a React form:
+   - A text input and a submit button that logs the input value to the console.
+
+3. Develop a `UserCard` component:
+   - Takes `name` and `email` as props.
+   - Displays them inside a styled card using Tailwind CSS.
+
+4. Create a `Button` component:
+   - Styled with Tailwind (blue background, white text, rounded corners).
+   - Log `"Button clicked!"` on click.
+
+5. Build a `LoginForm` component:
+   - Email and password fields using `useState`.
+   - Display an alert with entered details upon submission.
 
 ---
 
-### Week 5: **Authentication & Authorization**
-- **Objective**: Implement user authentication and authorization.
-- **Tasks**:
-  - Add user registration and login functionality.
-  - Use JWT (JSON Web Tokens) for secure authentication.
-  - Protect routes based on user roles.
-- **Resources**:
-  - [JWT Documentation](https://jwt.io/)
-  - [bcrypt for Password Hashing](https://www.npmjs.com/package/bcrypt)
+## Week 4: Full-Stack Development with React.js & Express.js
+
+**Objective:** Combine frontend and backend development using React.js and Express.js to build a full-stack web application.
+
+### Frontend Tasks (React.js + Tailwind CSS):
+
+1. Build a responsive landing page with:
+   - Hero section (title & description)
+   - Product section (list of products with images, names, prices)
+   - Responsive navbar
+   - Footer with social media links
+
+2. Create a product details page:
+   - Shows more information when a product is clicked.
+
+### Backend Tasks (Express.js):
+
+1. Set up an Express.js server:
+   - Run on port `5000`.
+   - Middleware to parse JSON requests.
+
+2. Define a GET route `/welcome`:
+   - Returns `{ message: "Welcome to Express!" }`.
+
+3. Create an in-memory array to store users (`id`, `name`, `email`) and implement routes:
+   - `GET /users`
+   - `POST /users`
+   - `PUT /users/:id`
+   - `DELETE /users/:id`
 
 ---
 
-### Week 6: **Deployment**
-- **Objective**: Deploy the full-stack application.
-- **Tasks**:
-  - Deploy the backend on platforms like Heroku or Render.
-  - Deploy the frontend on platforms like Netlify or Vercel.
-  - Connect the frontend and backend in production.
-- **Resources**:
-  - [Heroku Deployment Guide](https://devcenter.heroku.com/)
-  - [Netlify Documentation](https://www.netlify.com/)
+## Getting Started
 
----
-
-## 🛠️ Technologies Used
-
-| Technology | Description |
-|------------|-------------|
-| **MongoDB** | NoSQL database for storing data. |
-| **Express.js** | Backend framework for building APIs. |
-| **React** | Frontend library for building user interfaces. |
-| **Node.js** | JavaScript runtime for server-side execution. |
-| **JWT** | For secure authentication and authorization. |
-| **Axios** | For making HTTP requests between frontend and backend. |
-
----
-
-
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/akarsh-debug/Smart-Bridge-Weekly-Assignments.git
