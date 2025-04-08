@@ -1,8 +1,10 @@
+// server.js
 const express = require('express');
 const app = express();
 const PORT = 5000;
 
 app.use(express.json());
+
 
 app.get('/welcome', (req, res) => {
   res.json({ message: "Welcome to Express!" });
@@ -13,10 +15,12 @@ let users = [
   { id: 2, name: 'Jane Smith', email: 'jane@example.com' }
 ];
 
+// GET all users
 app.get('/users', (req, res) => {
   res.json(users);
 });
 
+// POST new user
 app.post('/users', (req, res) => {
   const { name, email } = req.body;
   
@@ -31,6 +35,7 @@ app.post('/users', (req, res) => {
   res.status(201).json(newUser);
 });
 
+// PUT update user
 app.put('/users/:id', (req, res) => {
   const id = parseInt(req.params.id);
   const { name, email } = req.body;
@@ -49,6 +54,7 @@ app.put('/users/:id', (req, res) => {
   res.json(users[userIndex]);
 });
 
+// DELETE user
 app.delete('/users/:id', (req, res) => {
   const id = parseInt(req.params.id);
   
